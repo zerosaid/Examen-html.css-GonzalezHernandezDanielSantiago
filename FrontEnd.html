@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIAN</title>
+    <link rel="icon" href="img/Recursos/2560px-Dian_(Colombia)_logo.svg.png" type="image/x-icon">
+    <style>
+        body {
+            background-color: aqua;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            align-content: center;
+        }
+        header {
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 25px;
+        }
+        .cajita-1 {
+            display: grid;
+            grid-template-areas:
+            "titulo"
+            "article"
+            "footer";
+            grid-gap: 20px;
+            padding: 20px;
+        
+        }
+        .cajita-2 {
+            display: grid;
+            grid-template-areas:
+            "titulo"
+            "article"
+            "footer";
+            grid-gap: 20px;
+            padding: 20px;
+        
+        }
+        .titulo {
+            grid-area: titulo;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 25px;
+            align-content: center;
+        }
+        
+        .parrafo1 {
+            grid-area: article;
+            padding: 20px;
+            border-radius: 25px;
+        }
+        
+        .footer {
+            grid-area: footer;
+            padding: 20px;
+            border-radius: 25px;
+        }
+        @media (min-width: 431px) and (max-width: 960px) {
+            .cajita-1 {
+            grid-template-columns: 2fr 2fr;
+            grid-template-areas:
+                "titulo article"
+                "footer footer";
+            }
+        }
+        @media (min-width: 961px) {
+            .cajita-1 {
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-template-areas:
+                "titulo article article"
+                "footer footer footer";
+            }
+        }
+        @media (min-width: 431px) and (max-width: 960px) {
+            .cajita-2 {
+            grid-template-columns: 2fr 2fr;
+            grid-template-areas:
+                "article titulo"
+                "footer footer";
+            }
+        }
+        @media (min-width: 961px) {
+            .cajita-2 {
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-template-areas:
+                "article article titulo"
+                "footer footer footer";
+            }
+        }
+        img {
+            display: flex;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        .img-1{
+            width: auto;
+            height: auto;
+        }
+        section {
+            padding: 20px;
+            border-radius: 25px;
+            background-color: #f9f9f9;
+            margin: 20px;
+        }
+        p {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        .frase{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <header>Estudio de usuarios para el apalicativo wed de la entidad</header>
+    <img src="img/Recursos/2560px-Dian_(Colombia)_logo.svg.png" alt="dian">
+    <p>En esta parte del ejercicio, vamos a hacer un estudio de usuario, por el cual se realizaran 3 arquetipos/historia de usuario basados en la problematica presentada por la empresa</p>
+    
+    <div class="cajita-1">
+        <section class="titulo-1">
+            <p class="name">Andres</p>
+            <img src="img/Recursos/X3.png" alt="Andres" class="img-1">
+            <p class="frase">"Quiero aprender y sacar adelante mi empresa"</p>
+        </section>
+        <section class="parrafo1">
+                <p>Nombre <br> Andres Castro</p><hr>
+                <p>Atributo clave <br> Emprendedor, multidisciplinario, inteligente</p><hr>
+                <p>Descripcion <br> Andres quiere montar su propio negocio pero necesita sacar su RUT para identificarse como contribuyente de la manera más fácil y rápida posible.</p><hr>
+                <p>Necesidades<br>Necesita crear su RUT para cumplir con sus obligaciones legales.</p><hr>
+        </section>
+        <div class="footer">
+            <p>Obstáculos <br> No ha podido comprender el manejo de la pagina wed ofrecida por la DIAN y el traslado a la Plataforma MUISCA hace le proceso sea más complejo</p><hr> 
+            <p>Oportunidades <br> Quiere hacer todo el tramite de manera remota por su horario pesado y facilidad de acceso</p> <hr>
+        </div>
+    </div>
+
+    <div class="cajita-2">
+        <section class="titulo-1">
+            <p class="name">Andres</p>
+            <img src="img/Recursos/X2.png" alt="Andres" class="img-1">
+            <p class="frase">"Con mi firma electronica puedo autorizar desde cualquier lugar en el que este"</p>
+        </section>
+        <section class="parrafo1">
+                <p>Nombre <br> Camila Echeverry</p><hr>
+                <p>Atributo clave <br> Trabajadora, inteligente, ocupada</p><hr>
+                <p>Descripcion <br> Camila es gerente general de una fiduciaria, pero por su horario tan pesado, la cual requiere que se desplace a lo largo de todo el territorio nacional, no puede esperar a llegar a la sede principal para firmar los contratos y autorizaciones pertinentes, por lo cual quiere solicitar su firma electronica.</p><hr>
+                <p>Necesidades<br>Necesita sacar su firma electronica para cumplir con sus obligaciones contractuales.</p><hr>
+        </section>
+        <div class="footer">
+            <p>Obstáculos <br> No ha podido comprender el manejo de la pagina wed ofrecida por la DIAN y la situacion actual de salud mundial no le permite hacer tramite de manera precencial.</p><hr> 
+            <p>Oportunidades <br> Quiere hacer todo de manera remota, por su horario pesado y facilidad de acceso</p> <hr>
+        </div>
+    </div>
+
+    <div class="cajita-1">
+        <section class="titulo-1">
+            <p class="name">Andres</p>
+            <img src="img/Recursos/X1.png" alt="Andres" class="img-1">
+            <p class="frase">"Quiero aprender y sacar adelante mi empresa"</p>
+        </section>
+        <section class="parrafo1">
+                <p>Nombre <br> Carolina Baron</p><hr>
+                <p>Atributo clave <br> Empresaria, ganadera, emprendedora</p><hr>
+                <p>Descripcion <br> Carolina saco hace mucho tiempo su RUT para un trabajo que tenia, pero ahora como su empresa ganadera necesita identificarse en otras partes para responder con sus obligaciones tributarias, portal razon necesita consultar su NIT para hacer este proceso.</p><hr>
+                <p>Necesidades<br>Necesita consultar su NIT par acumplir con sus obligaciones tributarias.</p><hr>
+        </section>
+        <div class="footer">
+            <p>Obstáculos <br> No ha podido comprender el manejo de la pagina wed ofrecida por la DIAN y no tiene el tiempo necesario para hacer algun tramite precencial.</p><hr> 
+            <p>Oportunidades <br> Quiere hacer todo el tramite de manera remota para proteger su salud y aprender el sistema en lineade la DIAN </p> <hr>
+        <p class="CHECK">
+                Al analizar estos tipos de usuario se puede extraer las siguientes caracteristicas:
+            <br>
+            &check;Los cargos que ejercen son diversos y en diferentes campos laborales 
+            <br>
+            &check;Tienen dificultad en manejar la pagina que provee la <img src="img/Recursos/2560px-Dian_(Colombia)_logo.svg.png" alt="a" width="80px" height="30px">
+            <br>
+            &check;Los tramites se requieren realizar de manera virtual
+        </p>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>
